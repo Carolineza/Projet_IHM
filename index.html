@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Zone</title>
+    <!-- Lien vers le fichier CSS pour le style -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Script JS pour les animations (chargé en différé pour optimiser la performance) -->
+    <script src="JS/animations.js" defer></script>
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header class="animate-header">
+        <h1>Sport Zone</h1>
+        <!-- Lien pour accéder à la page de connexion -->
+        <a href="connexion.html" class="login-link">Connexion</a>
+    </header>
+
+    <!-- Barre de navigation principale -->
+    <nav class="main-nav">
+        <!-- Liens vers les différentes sections de la page -->
+        <a href="#intro" class="nav-link">Introduction</a>
+        <a href="#sports" class="nav-link">Sports</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <!-- Section d'introduction -->
+        <section id="intro" class="hero-section">
+            <div class="hero-text">
+                <h2>Améliorez vos Performances</h2>
+                <p>Bienvenue sur Sport Zone, votre plateforme dédiée au suivi et à l'analyse de vos activités sportives. Découvrez des outils modernes pour atteindre vos objectifs sportifs.</p>
+                <!-- Bouton pour inciter l'utilisateur à commencer -->
+                <a href="connexion.html" class="cta-button">Commencer</a>
+            </div>
+            <!-- Image d'illustration -->
+            <img src="images/Sport_Zone_1.webp" alt="Sport Zone" class="hero-image">
+        </section>
+
+        <!-- Section présentant les sports -->
+        <section id="sports" class="sports-section">
+            <h2 class="section-title">Nos Sports</h2>
+            <!-- Liste des sports affichée horizontalement -->
+            <div class="sports-list">
+                <!-- Élément pour chaque sport -->
+                <div class="sport-item">
+                    <!-- Image du sport -->
+                    <img src="images/course_Pied_IA.webp" alt="Course à pied" class="sport-image">
+                    <!-- Description du sport -->
+                    <div class="sport-description">
+                        <h3>Course à Pied</h3>
+                        <p>La course à pied est une activité idéale pour améliorer votre endurance et votre santé cardiovasculaire. Avec Sport Zone, suivez votre distance parcourue, votre rythme, votre vitesse moyenne et vos calories brûlées. Que vous soyez débutant ou expérimenté, notre application vous aide à fixer des objectifs réalistes et à atteindre vos nouveaux records personnels.</p>                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <img src="images/marche_IA.webp" alt="Marche" class="sport-image">
+                    <div class="sport-description">
+                        <h3>Marche</h3>
+                        <p>La marche, qu'elle soit sportive ou en randonnée, est une excellente activité pour maintenir une bonne santé et explorer de nouveaux horizons. Sport Zone permet de mesurer vos pas, votre vitesse et vos calories dépensées, tout en suivant vos progrès au fil du temps.</p>                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <img src="images/natation_IA_3.webp" alt="Natation" class="sport-image">
+                    <div class="sport-description">
+                        <h3>Natation</h3>
+                        <p>La natation est un excellent moyen de renforcer vos muscles et votre système cardiovasculaire tout en minimisant l'impact sur vos articulations. Suivez votre distance, le nombre de longueurs et les calories brûlées avec Sport Zone, et améliorez vos performances dans l'eau.</p>                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <img src="images/velo_IA_.webp" alt="Vélo" class="sport-image">
+                    <div class="sport-description">
+                        <h3>Vélo</h3>
+                        <p>Le cyclisme est une activité parfaite pour explorer de nouveaux paysages tout en améliorant votre condition physique. Grâce à Sport Zone, mesurez vos kilomètres parcourus, votre vitesse, vos dénivelés, et suivez vos performances pour atteindre vos objectifs.</p>                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section contact -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <p>Email : <a href="mailto:support@sportzone.com">support@sportzone.com</a></p>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Sport Zone. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

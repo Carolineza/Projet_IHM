@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Sport Zone</title>
+    <link rel="stylesheet" href="CSS/connexion-style.css">
+</head>
+<body>
+    <!-- Barre supérieure -->
+    <header class="header">
+        <h1>Sport Zone</h1>
+        <nav class="nav-bar">
+            <a href="index.html">Accueil</a>
+            <a href="profile.html">Mon Profil</a>
+            <a href="logout.html">Déconnexion</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <!-- Colonne de gauche : Invités -->
+        <aside class="sidebar">
+            <div class="user-card">
+                <div class="profile-initial">C</div>
+                <p class="user-name">Carole Ineza</p>
+                <p class="user-info">Abonnements : 0 | Abonnés : 0</p>
+            </div>
+
+            <div class="invites-section">
+                <h3>Invités</h3>
+                <ul id="invites-list"></ul>
+            </div>
+            
+            <!-- Section de recherche d'amis -->
+            <div class="friends-section">
+                <h3>Découvrez ce que font vos amis</h3>
+                <p>Recherchez des amis et partagez vos performances ensemble. Invitez-les à rejoindre votre aventure sportive.</p>
+                <div class="search-bar">
+                    <input type="text" id="search-friends" placeholder="Nom de l'ami ou de l'athlète">
+                    <button onclick="searchFriends()">Rechercher</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Section principale -->
+        <section class="dashboard">
+            <!-- Bannière de bienvenue -->
+            <div class="welcome-banner">
+                <h2>Bienvenue sur Sport Zone</h2>
+                <p>Enregistrez votre première activité pour commencer à suivre vos performances.</p>
+                <p id="selected-sport">Sport sélectionné : Aucun</p>
+            </div>
+
+            <!-- Sélection des sports -->
+            <div class="sport-selection">
+                <h3>Choisissez votre sport</h3>
+                <ul class="sport-icons">
+                    <li><button class="sport-btn" data-sport="Course à pied"><img src="images/course_icone.webp" alt="Course à pied"><p>Course à pied</p></button></li>
+                    <li><button class="sport-btn" data-sport="Cyclisme"><img src="images/cyclisme_Icone.webp" alt="Cyclisme"><p>Cyclisme</p></button></li>
+                    <li><button class="sport-btn" data-sport="Natation"><img src="images/swimming.webp" alt="Natation"><p>Natation</p></button></li>
+                    <li><button class="sport-btn" data-sport="Marche"><img src="images/marche_icone.webp" alt="Marche"><p>Marche</p></button></li>
+                </ul>
+            </div>
+
+           
+
+            <!-- Section actions -->
+            <div class="actions-section">
+                <div class="action-card">
+                    <img src="images/reg.webp" alt="Enregistrer une activité" class="action-icon">
+                    <div class="action-content">
+                        <h3>Enregistrez une activité</h3>
+                        <p>Ajoutez une activité pour suivre vos progrès et fixer des objectifs adaptés à vos besoins.</p>
+                        <button onclick="redirectToForm('activite.html')" class="primary-btn">Enregistrer une activité</button>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <img src="images/statistics.webp" alt="Statistiques" class="action-icon">
+                    <div class="action-content">
+                        <h3>Découvrez vos statistiques</h3>
+                        <p>Visualisez vos performances après avoir ajouté une activité.</p>
+                        <button class="primary-btn">Voir les statistiques</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2024 Sport Zone. Tous droits réservés.</p>
+    </footer>
+
+    <script src="JS/connexion.js"></script>
+</body>
+</html>

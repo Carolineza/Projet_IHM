@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Sport Zone</title>
+    <link rel="stylesheet" href="CSS/compte-style.css">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header class="header">
+        <h1><a href="index.html" class="logo">Sport Zone</a></h1>
+    </header>
+
+    <!-- Contenu principal avec le formulaire de création de compte -->
+    <main class="main-content">
+        <div class="signup-container">
+            <h2>Créer un compte</h2>
+            <form action="/submit-signup" method="POST" class="form">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                </div>
+
+                <button type="submit" class="submit-button">Créer un compte</button>
+            </form>
+            <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous</a></p>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2024 Sport Zone. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
